@@ -43,12 +43,29 @@ const Hero = () => {
           <option value="Option1">Rentals</option>
           <option value="Option2">Sales</option>
           <option value="Option3">Commercial</option>
-
         </select>
+        </div>
 
+        <div className="w-full">
+        <h1 className="text-black font-semibold dark:text-white">CATEGORY</h1>
+        <select name="selectOption "id="selectOption" className="bg-white p-2 border-b-[1px] w-full mt-2 border-b-[#c9c7c1] text-gray-500 text-md">
+          <option value="" disabled selected>Property Category</option>
+          <option value="Option1">Apartments</option>
+          <option value="Option2">Duplex</option>
+          <option value="Option3">Bungalow</option>
+          <option value="Option4">Condominium</option>
+          <option value="Option6">Flat</option>
+          <option value="Option7">Penthouse</option>
+          <option value="Option8">Single family home</option>
+          <option value="Option9">Detached</option>
+          <option value="Option10">Dormitory</option>
+        </select>
+        </div>
+        <div className="w-full">
+          <button className=" bg-red-600 dark:bg-red-700 hover:bg-black dark:hover:bg-white dark:hover:text-black text-lg p-4 w-full text-white font-semibold
+           rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300">SUBMIT</button>
         </div>
         </div>
-        
       </div>
     </>
   );

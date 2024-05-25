@@ -24,7 +24,6 @@ const App = () => {
       <Clients />
       <Contact />
       <Footer />
-
     </DarkModeProvider>
     </>
   )
