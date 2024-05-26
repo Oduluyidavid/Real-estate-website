@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDarkMode } from '../components/DarkModeContext'
 import { property } from '../components/export'
-import { FaBath, FaShareAlt, FaBed, FaUserCircle, FaPlus, FaMapMarkerAlt, FaVideo, FaCamera } from 'react-icons/fa'
+import { FaBath, FaShareAlt, FaBed, FaUserCircle, FaPlus, FaMapMarkerAlt, FaVideo, FaCamera, FaHeart } from 'react-icons/fa'
 import { MdSpaceDashboard } from 'react-icons/md'
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -72,6 +72,24 @@ const properties = () => {
                     <div className='flex justify-center items-center gap-2'>
                      <MdSpaceDashboard className='size-5 text-red-400'/>
                      <h1 className='dark:text-white'>{item.area}</h1>
+                    </div>
+                  </div>
+
+                  <div className='w-full h-[1px] bg-gray-200 mt-8'></div>
+
+                  <div id='owner-info' className='flex justify-between items-center w-full mt-2'>
+
+                    <div className='flex justify-center items-center gap-2'>
+                      <FaUserCircle className='size-5 text-red-400'/>
+                      <h1 className='dark:text-white'>{item.owner}</h1>
+                    </div>
+                    <div className='flex justify-center items-center gap-4'>
+                      <div className='p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 
+                      transition-transform duration-300'><FaShareAlt className='size-4 text-red-400' /></div>
+                      <div className='p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 
+                      transition-transform duration-300'><FaHeart className='size-4 text-red-400' /></div>
+                      <div className='p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 
+                      transition-transform duration-300'><FaPlus className='size-4 text-red-400' /></div>
                     </div>
                   </div>
                 </div>
