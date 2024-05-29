@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-start gap-5">
             <h1 className="text-white text-2xl font-semibold">Contact Us</h1>
             <div className="flex justify-center items-center gap-3">
-              <FaBuilding className="text-white size-5" />
+              <FaBuilding className="text-white size-6 " />
               <p className="text-slate-200">By investing in real estate, you may benefit from this appreciation, allowing you to build wealth as the property’s value increases.</p>
             </div>
             <div className="flex justify-center items-center gap-3">
@@ -75,6 +75,16 @@ const Footer = () => {
             </div>
           </div>
       </footer>
+
+      {/*slide-to-top button*/}
+
+      <div id="icon-box" className="bg-red-600 p-4 rounded-full hover:bg-black 
+       cursor-pointer fixed lg:buttom-12 buttom-6 right-6">
+        <Link to='hero'spy={true} offset={-100} smooth={true}>
+          <FaArrowUp className="size-6 text-white" />
+        </Link>
+      </div>
+
     </>
   );
 };
