@@ -16,7 +16,7 @@ const Contact = () => {
     });
   }, []);
 
-  const { darkMode, toggledarkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <div

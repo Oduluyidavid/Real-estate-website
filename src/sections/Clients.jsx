@@ -17,7 +17,7 @@ const Clients = () => {
     });
   }, []);
 
-  const { darkMode, toggledarkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
 
   return (

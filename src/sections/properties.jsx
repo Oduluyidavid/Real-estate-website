@@ -16,7 +16,7 @@ const properties = () => {
       delay: 100,
     });
   }, []);
-  const { darkMode, toggledarkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <div className={`${darkMode ? 'dark bg-black' : 'light bg-transparent'}`}>
