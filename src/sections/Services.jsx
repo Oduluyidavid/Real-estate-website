@@ -8,7 +8,7 @@ const Services = () => {
 
   useEffect(() => {
     Aos.init({
-      offset: 200,
+      offset: 200,  
       duration: 800,
       easing: "ease-in-sine",
       delay: 100,

@@ -15,7 +15,7 @@ const About = () => {
       delay: 100,
     });
   }, []);
-  const { darkMode, toggledarkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <section id='About' className={`${darkMode ? "dark bg-black" : "light bg-transparent"}} w-full m-auto lg:px-40 px-10 py-20 grid lg:grid-cols-2 

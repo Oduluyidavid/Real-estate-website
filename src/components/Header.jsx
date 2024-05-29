@@ -104,6 +104,15 @@ const Header = () => {
           ))}
         </ul>
       </div>
+      <div className="flex justify-center items-center lg:gap-8 gap-2">
+        <div className="flex justify-center items-center lg:gap-3 gap-1">
+          <FaPhoneAlt className="size-5 text-red-600"/>
+          <h1 className="lg:text-xl text-sm text-black dark:text-white font-semibold"> +2349068767395</h1>
+        </div>
+        <FaUserCircle  className="size-6 text-red-600"/>
+
+
+      </div>
     </nav>
   );
 };
