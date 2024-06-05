@@ -40,7 +40,7 @@ const Footer = () => {
             <h1 className="text-white text-2xl font-semibold">Contact Us</h1>
             <div className="flex justify-center items-center gap-3">
               <FaBuilding className="text-white size-6 " />
-              <p className="text-slate-200">By investing in real estate, you may benefit from this appreciation, allowing you to build wealth as the property’s value increases.</p>
+              <p className="text-slate-200">By investing in real estate, you may benefit from this appreciation, allowing you to build wealth as the property value increases.</p>
             </div>
             <div className="flex justify-center items-center gap-3">
               <FaMobile className="text-white size-5" />
@@ -88,7 +88,7 @@ const Footer = () => {
       {/*dark mode toggle button section*/}
       <div>
         <button onClick={toggleDarkMode} className="flex items-center p-4 
-        rounded-full bg-orange-500 fixed lg:top-52 active:show right-6 top-6">
+        rounded-full bg-orange-500 fixed top-20 right-6 z-30">
           {darkMode ? <FaMoon size={20} className="text-black" />:<FaSun size={20} className="text-black" />}
         </button>
       </div>
